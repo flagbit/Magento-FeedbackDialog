@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+		<reference name="head">
+			<action method="addJs"><script>flagbit/feedbackdialog/slider.js</script></action>
+			<action method="addItem"><type>skin_css</type><name>flagbit/feedbackdialog/css/styles.css</name></action>
+			<action method="addItem"><type>skin_css</type><name>flagbit/feedbackdialog/css/styles-ie.css</name><params/><if>lt IE 9</if></action>
+		</reference>
+
+		<reference name="content">
+			<block type="flagbit_feedbackdialog/html_dialog" name="dialog_slider" as="dialog_slider" template="flagbit_feedbackdialog/slider.phtml">
+				<block type="newsletter/subscribe" name="newsletter_slider.form" as="slider-form" template="flagbit_feedbackdialog/subscribe.phtml"/>
+			</block>
+		</reference>
+	</default>
+</layout>

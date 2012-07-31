@@ -1,0 +1,36 @@
+<?php
+/**
+ * Dialog-Slider template
+ *
+ * @see Flagbit_FeedbackDialog_Block_Html_Dialog
+ */
+?>
+<?php if ( Mage::helper('flagbit_feedbackdialog')->getConfigData('enabled') ): ?>
+<div class="feedback-overlaymask overlaymask"></div>
+<div class="feedback-container">
+	<div class="feedback-flag" id="feedback-flag">
+		<div class="feedback-content">
+			<div class="feedback-title">
+				5€ Gutschein sichern -<br />
+				ohne Mindestbestellwert
+			</div>
+			<?php echo $this->getChildHtml('slider-form'); ?>
+		</div>
+		<div class="feedback-teaser">
+			<div class="teaser-content">
+				Newsletter abonnieren -<br />
+				5 € Gutschein sichern
+			</div>
+		</div>
+		<div class="open-banner"></div>
+		<div class="close-banner"></div>
+	</div>
+</div>
+<script type="text/javascript">
+	var dialogSlider;
+	
+	document.observe("dom:loaded", function() {
+		dialogSlider = new Flagbit.FeedbackDialog('.feedback-flag','.feedback-overlaymask');
+	});
+</script>
+<?php endif; ?>

@@ -1,0 +1,15 @@
+.feedback-flag .close-banner, .feedback-flag .open-banner {
+	filter: alpha(opacity=0);
+}
+
+.feedback-teaser {
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	top: 0px;
+	left: 389px;
+}
+
+.feedback-content .block-content .block-controls button {
+	padding: 0;
+	height: 27px;
+	margin-left: 2px;
+}

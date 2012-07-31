@@ -1,0 +1,175 @@
+.overlaymask {
+	background-color: #000000;
+	background: transparent url("../images/opacity.png");
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+.feedback-container {
+	height: 250px;
+	position: fixed;
+	top: 40%;
+	left: 0px;
+	z-index: 1005;
+}
+
+.feedback-flag {
+	-moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #fff;
+    border-radius: 0 6px 6px 0;
+    border-radius: 0 \0/;
+    border-style: solid;
+    border-width: 1px;
+	background-color: #F75A58;
+    background-image: -moz-linear-gradient(top , #F75A58, #f82126);
+    background-image: -webkit-linear-gradient(top, #F75A58, #f82126);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#F75A58", endColorStr="#f82126");
+	color: #FFFFFF;
+	cursor: default;
+	font-size: 12px;
+	position: absolute;
+	top: 0px;
+	left: -390px;
+	width: 448px;
+	height: 249px;
+	z-index: 1010;
+}
+	.feedback-flag .close-banner, .feedback-flag .open-banner {
+		background-color:#fff;
+		-moz-opacity:0.5;
+		-khtml-opacity: 0.5;
+		opacity:0;
+		clear:both;
+		cursor: pointer;
+		height: 250px;
+		width: 59px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 1030;
+	}
+
+.feedback-content {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 164px;
+	width: 362px;
+	padding: 0 0 0 27px;
+	text-align: left;
+	z-index: 1015;
+}
+	.feedback-content .feedback-title {
+		background-color: #f82126;
+		font-size: 21px;
+		font-weight: bold;
+		line-height: 21px;
+		padding: 8px 0 8px 12px;
+		color: #000;
+	}
+	.feedback-content .block-title {
+		border: 0;
+		color:#fff;
+		font-size:24px;
+		padding:10px 0 9px 0;
+		font-family: Georgia;
+	}
+	.feedback-content .block-content {
+		color:#fff;
+		font-size:14px;
+		font-family: Georgia;
+		width: 310px;
+		line-height: 16px;
+	}
+		.feedback-content .block-content .block-info {
+			height: 48px;
+		}
+		.feedback-content .block-content .block-controls {
+			margin-top: 28px;
+		}
+			.feedback-content .block-content .block-controls input {
+				-moz-border-bottom-colors: none;
+			    -moz-border-image: none;
+			    -moz-border-left-colors: none;
+			    -moz-border-right-colors: none;
+			    -moz-border-top-colors: none;
+			    border-color: #CCCCCC #CCCCCC #BBBBBB;
+			    border-radius: 3px 3px 3px 3px;
+			    border-style: solid;
+			    border-width: 1px;
+				color: #919896;
+				font-weight: bold;
+			    font-family: Verdana,sans-serif;
+			    padding: 3px 4px 3px;
+			    width: 152px;
+			    height: 19px;
+			}
+			.feedback-content .block-content .block-controls button {
+				-moz-border-bottom-colors: none;
+			    -moz-border-image: none;
+			    -moz-border-left-colors: none;
+			    -moz-border-right-colors: none;
+			    -moz-border-top-colors: none;
+			    background-color: #EEEEEE;
+			    background-image: -moz-linear-gradient(top , #EEEEEE, #CCCCCC);
+    			background-image: -webkit-linear-gradient(top, #EEEEEE, #CCCCCC);
+    			filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#EEEEEE", endColorStr="#CCCCCC");
+			    border-color: #CCCCCC #CCCCCC #BBBBBB;
+			    border-radius: 3px 3px 3px 3px;
+			    border-style: solid;
+			    border-width: 1px;
+			    color: #333333;
+			    font: bold 11px/1 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+			    padding: 3px 0;
+			    text-align: center;
+			    text-shadow: 0 1px 0 #EEEEEE;
+			    width: 60px;
+			}
+				.feedback-content .block-content .block-controls button span {
+					background-color: transparent;
+					border: 0;
+					color: #333;
+				}
+
+.feedback-teaser {
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+	/* IE */
+	-ms-transform: rotate(-90deg);
+	/* Opera */
+	-o-transform: rotate(-90deg);
+	/* Internet Explorer */
+	position: absolute;
+	top: 96px;
+	left: 293px;
+	width: 249px;
+	height: 56px;
+	border-top: 1px solid #fff;
+	z-index: 1025;
+}
+	.teaser-content {
+		display: block;
+		margin: 11px 0 0 15px;
+		font-size: 20px;
+		line-height: 19px;
+	}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .feedback-content .block-content .block-controls input {
+	    width: 157px;
+	}
+	.feedback-content .block-content .block-controls button {
+		padding: 3px 9px;
+		width: 70px;
+		margin-left: -8px;
+	}
+}
