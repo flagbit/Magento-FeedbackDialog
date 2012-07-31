@@ -1,3 +1,4 @@
 Magento-FeedbackDialog
 ======================
-An Extension to display a Feedback-Overlay at the left screen side. It darkens the page-content after clicking and increases it's size to show the full content. 
+This extension displays an interferer to the shop's visitors, which pops up and darkens the rest of the page content by clicking. The interferer can provide important information, special promotions or, as in our case, a newsletter subscription.
+After implementation, the extension can be activated through the backend under Configuration -> Customers -> Newsletters. 
